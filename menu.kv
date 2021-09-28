@@ -1,0 +1,27 @@
+MDScreen:
+    name: "login"
+    MDBoxLayout:
+
+        orientation: "vertical"
+
+        MDToolbar:
+            title: "Aegis"
+            elevation: "8"
+            left_action_items: [["menu", lambda x: app.callback(x)]]
+            right_action_items: [["timer", lambda x: app.time()]]
+
+        MDSwitch:
+            pos_hint: {"center_x": 0.9, "center_y": 0.70 }
+            active: True
+
+        MDSwitch:
+            pos_hint: {"center_x": 0.9, "center_y": 0.60}
+            active: True
+
+        MDTextField:
+            halign: "center"
+            size_hint: (0.8,1)
+            pos_hint: {"center_x": 0.5, "center_y": 0.5}
+            font_size: 22
+            hint_text: "Enter Website URL"
+            
